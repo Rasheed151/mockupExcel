@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+    /* animasi bawaan */
+    .dropdown-content {
+        transform-origin: top right;
+        transition: opacity .15s ease, transform .15s ease;
+    }
+
+    input:checked ~ .dropdown-content {
+        opacity: 1;
+        transform: scale(1);
+        pointer-events: auto;
+    }
+
+    input:not(:checked) ~ .dropdown-content {
+        opacity: 0;
+        transform: scale(0.95);
+        pointer-events: none;
+    }
