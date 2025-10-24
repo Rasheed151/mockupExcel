@@ -15,9 +15,9 @@
 
 <body x-data="{ open: true }">
     <!-- Sidebar -->
-    <div class="flex">
+    <div class="flex m-0">
         <aside
-            class="border-r bg-gray-200 w-64 h-screen fixed left-0 transform transition-transform duration-300 ease-in-out"
+            class="border-r bg-[#047857] w-64 h-screen fixed left-0 transform transition-transform duration-300 ease-in-out"
             :class="open ? 'translate-x-0' : '-translate-x-full'">
 
             <!-- Header Sidebar -->
@@ -27,7 +27,7 @@
 
             <!-- Isi Menu -->
             <nav class="flex flex-col p-2 space-y-2 text-xl justify-center m-4">
-                <details class="bg-white p-2 rounded-lg">
+                <details class="bg-gray-300 p-2 rounded-lg">
                     <summary class="cursor-pointer">2025</summary>
                     <ul class="ml-4 mt-2 space-y-1 ">
                         <li>Januari</li>
@@ -45,7 +45,7 @@
                     </ul>
                 </details>
 
-                <details class="bg-white p-2 rounded-lg">
+                <details class="bg-gray-300 p-2 rounded-lg">
                     <summary class="cursor-pointer">2024</summary>
                     <ul class="ml-4 mt-2 space-y-1 ">
                         <li>Januari</li>
@@ -63,7 +63,7 @@
                     </ul>
                 </details>
 
-                <details class="bg-white p-2 rounded-lg">
+                <details class="bg-gray-300 p-2 rounded-lg">
                     <summary class="cursor-pointer">2023</summary>
                     <ul class="ml-4 mt-2 space-y-1 ">
                         <li>Januari</li>
@@ -81,7 +81,7 @@
                     </ul>
                 </details>
 
-                <details class="bg-white p-2 rounded-lg">
+                <details class="bg-gray-300 p-2 rounded-lg">
                     <summary class="cursor-pointer">2022</summary>
                     <ul class="ml-4 mt-2 space-y-1 ">
                         <li>Januari</li>
@@ -99,7 +99,7 @@
                     </ul>
                 </details>
 
-                <details class="bg-white p-2 rounded-lg">
+                <details class="bg-gray-300 p-2 rounded-lg">
                     <summary class="cursor-pointer">2021</summary>
                     <ul class="ml-4 mt-2 space-y-1 ">
                         <li>Januari</li>
@@ -131,7 +131,7 @@
         </aside>
     </div>
 
-    <main class="flex-1 ml-0 transition-all duration-300" :class="open ? 'ml-64' : 'ml-4'">
+    <main class="flex-1 ml-0 transition-all duration-300" :class="open ? 'ml-64' : 'ml-0'">
         <!-- header -->
         <div class="bg-gray-400 font-semibold py-4 px-8">
             <div class="nav flex flex-row justify-between text-2xl">
@@ -195,13 +195,13 @@
             <div class="flex items-center justify-between mb-3">
                 <div>
                     <h2 class="text-xl font-bold">Data 0725</h2>
-                    <div class="text-sm text-gray-600">Rows: 1000 — Columns: A–Z — Freeze 7 kolom</div>
+                    <div class="text-sm text-gray-600">Rows: 1000 — Columns: A–Z</div>
                 </div>
                 <div class="text-sm text-gray-700">Tgl: <span id="server-date">27-07-2025</span></div>
             </div>
 
             <!-- spreadsheet wrapper -->
-            <div id="spreadsheet-wrapper" class="border bg-white overflow-auto h-[80vh]">
+            <div id="spreadsheet-wrapper" class="border bg-white overflow-auto h-[80vh] ml-8">
                 <!-- top padding placeholder -->
                 <div id="top-pad" style="height:0px"></div>
 
