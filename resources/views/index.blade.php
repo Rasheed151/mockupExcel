@@ -201,7 +201,7 @@
             </div>
 
             <!-- spreadsheet wrapper -->
-            <div id="spreadsheet-wrapper" class="border bg-white overflow-auto h-[80vh] ml-8">
+            <div id="spreadsheet-wrapper" class="border bg-white overflow-auto h-[80vh] ml-12">
                 <!-- top padding placeholder -->
                 <div id="top-pad" style="height:0px"></div>
 
