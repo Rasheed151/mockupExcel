@@ -15,8 +15,11 @@ use App\Http\Controllers\Data0725Controller;
 
 Route::get('/index', function () {
     return view('column');
-
 });
 
-Route::get('/', [Data0725Controller::class, 'index'])->name('index');
+Route::get('/', function () {
+    return view('index');
+});
+
+// Route::get('/', [Data0725Controller::class, 'index'])->name('index');
 // Route::post('/', [Data0725Controller::class, 'saveCell'])->name('data_0725.save_cell');
